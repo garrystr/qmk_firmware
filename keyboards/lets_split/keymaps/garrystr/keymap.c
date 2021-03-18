@@ -31,35 +31,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |  Tab |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |  Esc |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  | Enter|
+ * |  Esc |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   -  | Enter|
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |   /  |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   -  |Shift |
+ * |SftCap|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   ;  |Shift |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |SftCap| Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left|  Up  | Down |Right |   '  |
+ * |   /  | Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left| Down |  Up  |Right |   '  |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_ortho_4x12(
    KC_TAB ,        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
-   KC_ESC,         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_ENT, \
-   KC_SLSH, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_MINS, KC_RSFT , \
-   SFT_T(KC_CAPS),        KC_LCTL, KC_LALT, KC_LGUI, KC_DEL,  KC_SPC,  ADJUST,  KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, KC_QUOT \
+   KC_ESC,         KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_MINS, KC_ENT, \
+   SFT_T(KC_CAPS), KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SCLN, KC_RSFT , \
+   KC_SLSH,        KC_LCTL, KC_LALT, KC_LGUI, KC_DEL,  KC_SPC,  ADJUST,  KC_LEFT, KC_DOWN,   KC_UP, KC_RGHT, KC_QUOT \
 ),
 
 /* Colemak
  * ,-----------------------------------------------------------------------------------.
- * | Tab  |   Q  |   W  |   F  |   P  |   B  |   J  |   L  |   U  |   Y  |   ;  | Bksp |
+ * | Tab  |   Q  |   W  |   F  |   P  |   B  |   J  |   L  |   U  |   Y  |   -  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Esc  |   A  |   R  |   S  |   T  |   G  |   M  |   N  |   E  |   I  |   O  | Enter|
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |   /  |   Z  |   X  |   C  |   D  |   V  |   K  |   H  |   ,  |   .  |   -  |Shift |
+ * |SftCap|   Z  |   X  |   C  |   D  |   V  |   K  |   H  |   ,  |   .  |   ;  |Shift |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |SftCap| Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left|  Up  | Down |Right |   '  |
+ * |   /  | Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left| Down |  Up  |Right |   '  |
  * `-----------------------------------------------------------------------------------'
  */
 [_COLEMAK] = LAYOUT_ortho_4x12( \
-  KC_TAB,         KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC, \
+  KC_TAB,         KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_MINS, KC_BSPC, \
   KC_ESC,         KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_ENT, \
-  SFT_T(KC_CAPS), KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_MINS, KC_RSFT, \
+  SFT_T(KC_CAPS), KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SCLN, KC_RSFT, \
   KC_SLSH,        KC_LCTL, KC_LALT, KC_LGUI, KC_DEL,  KC_SPC,  ADJUST,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_QUOT   \
 ),
 
@@ -69,34 +69,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Esc  |   A  |   O  |   E  |   U  |   I  |   D  |   H  |   T  |   N  |   S  | Enter|
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |   /  |   ;  |   Q  |   J  |   K  |   X  |   B  |   M  |   W  |   V  |   Z  |Shift |
+ * |SftCap|   Z  |   Q  |   J  |   K  |   X  |   B  |   M  |   W  |   V  |   ;  |Shift |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |SftCap| Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left|  Up  | Down |Right |   '  |
+ * |   /  | Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left| Down |  Up  |Right |   '  |
  * `-----------------------------------------------------------------------------------'
  */
 [_DVORAK] = LAYOUT_ortho_4x12( \
-  KC_TAB,           KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_MINS, KC_BSPC, \
-  KC_ESC,           KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_ENT, \
-  SFT_T(KC_CAPS),   KC_Z,    KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    KC_SCLN,    KC_RSFT, \
-  KC_SLSH ,       KC_LCTL,   KC_LALT, KC_LGUI, KC_DEL,  KC_SPC,  ADJUST,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_QUOT   \
+  KC_TAB,         KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_MINS, KC_BSPC, \
+  KC_ESC,         KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_ENT, \
+  SFT_T(KC_CAPS), KC_Z,    KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    KC_SCLN, KC_RSFT, \
+  KC_SLSH ,       KC_LCTL, KC_LALT, KC_LGUI, KC_DEL,  KC_SPC,  ADJUST,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_QUOT   \
 ),
 
 /* Numbers
  * ,-----------------------------------------------------------------------------------.
  * | TAB  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   `  |      |      |      |      |      |      |   -  |   =  |   [  |   ]  |Enter |
+ * |   `  |      |      |      |      |      |   \  |   -  |   =  |   [  |   ]  |Enter |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |   ~  |   ;  |  X   |   C  |  V   |      |ISO | |ISO ~ |   ,  |   .  |   \  |  /   |
+ * | Shift|      |  X   |   C  |  V   |      |ISO | |ISO ~ |   ,  |   .  |  ;   |Shift |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |Shift | Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left| Down |  Up  |Right |Shift |
+ * |   /  | Ctrl | Alt  | GUI  | DEL  |Space |Adjust | Left| Down |  Up  |Right |  ~   |
  * `-----------------------------------------------------------------------------------'
  */
 [_NUMS] = LAYOUT_ortho_4x12( \
   KC_TAB,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC, \
-  KC_GRV,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_ENT, \
-  KC_TILD, KC_SCLN, KC_X,    KC_C,    KC_V,    KC_NO,   KC_NUBS, KC_NUHS, KC_COMM, KC_DOT,  KC_BSLS, KC_SLSH, \
-  KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, KC_DEL,  KC_SPC,  ADJUST,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_RSFT  \
+  KC_GRV,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_BSLS, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_ENT, \
+  KC_LSFT, KC_NO,   KC_X,    KC_C,    KC_V,    KC_NO,   KC_NUBS, KC_NUHS, KC_COMM, KC_DOT,  KC_SCLN, KC_RSFT, \
+  KC_SLSH ,KC_LCTL, KC_LALT, KC_LGUI, KC_DEL,  KC_SPC,  ADJUST,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TILD   \
 ),
 
 /* Function
