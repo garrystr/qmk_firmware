@@ -1,28 +1,19 @@
-The Updated version of Keyboard for a Raspberry Pi4B
+The Updated version of Handwried Keyboard for a Raspberry Pi4B
 
-This is NOT a split keyboard
+This is NOT a split keyboard, not sure now why split is in the title.
 
 Ortho Keyboard 35 Keys with a 3x10 main layout and 5 additional keys on the 4th Row
-
-Makes use of the persistant default layer function, with the following layers defined
 
 A modified Dvorak Layer, modified as I made a mistake when I built my first Dvorak Keyboard
 All the top row keys are shifted to the left by 1 place.
 
-A Colemak-DHm layer, or as is commonly known now just Colemak-DH
+The Space bar is also shift when held, Fn is enter when tapped, home row has CTRL, CMD & ALT when held
+See the keymap for details.
 
-A standard QWERTY layer
+Makes use of the persistant default layer function, with the following layers defined
 
-A number Layer
-
-A function layer
-
-A Mouse Keys Layer
-
-An Adjust Layer
-
-Qwerty
 ```layers
+Qwerty
 |---------------------------------------------------------------------|
 |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  |
 |------+------+------+------+------+-------------+------+------+------|
