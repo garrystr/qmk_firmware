@@ -1,4 +1,4 @@
-An attempt to make a minimal keyboard that is ingrated with a Raspberry Pi4B+
+An attempt to make a minimal keyboard that is integrated with a Raspberry Pi4B+
 
 A sort of portable computer!
 
