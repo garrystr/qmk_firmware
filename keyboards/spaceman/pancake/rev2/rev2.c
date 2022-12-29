@@ -40,14 +40,23 @@ bool oled_task_kb(void) {
     oled_write_P(PSTR("\nLAYER\n-----\n"), false);
 
     switch (get_highest_layer(layer_state)) {
-        case 0:
-            oled_write_P(PSTR("DEFLT\n"), false);
+        case _DVORAK:
+            oled_write_P(PSTR("DVORAK\n"), false);
             break;
-        case 2:
+        case _QWERTY:
+            oled_write_P(PSTR("QWERTY\n"), false);
+            break;
+        case _COLEMAK:
+            oled_write_P(PSTR("COLEMAK\n"), false);
+            break;
+        case _NUMS:
+            oled_write_P(PSTR("NUMS\n"), false);
+            break;
+        case _FUNCT:
             oled_write_P(PSTR("FUNCT\n"), false);
             break;
-        case 1:
-            oled_write_P(PSTR("RAISE\n"), false);
+        case _ADJUST:
+            oled_write_P(PSTR("ADJUST\n"), false);
             break;
         default:
             // Or use the write_ln shortcut over adding '\n' to the end of your string
