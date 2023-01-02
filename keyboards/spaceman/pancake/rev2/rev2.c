@@ -55,7 +55,7 @@ bool oled_task_kb(void) {
         case 4:
             oled_write_P(PSTR("FUNCT\n"), false);
             break;
-        case 16:
+        case 5:
             oled_write_P(PSTR("ADJUST\n"), false);
             break;
         default:
