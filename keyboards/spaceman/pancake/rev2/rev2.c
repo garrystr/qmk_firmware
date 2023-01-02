@@ -40,22 +40,22 @@ bool oled_task_kb(void) {
     oled_write_P(PSTR("\nLAYER\n-----\n"), false);
 
     switch (get_highest_layer(layer_state)) {
-        case _DVORAK:
+        case 0:
             oled_write_P(PSTR("DVORAK\n"), false);
             break;
-        case _QWERTY:
+        case 1:
             oled_write_P(PSTR("QWERTY\n"), false);
             break;
-        case _COLEMAK:
+        case 2:
             oled_write_P(PSTR("COLEMAK\n"), false);
             break;
-        case _NUMS:
+        case 3:
             oled_write_P(PSTR("NUMS\n"), false);
             break;
-        case _FUNCT:
+        case 4:
             oled_write_P(PSTR("FUNCT\n"), false);
             break;
-        case _ADJUST:
+        case 16:
             oled_write_P(PSTR("ADJUST\n"), false);
             break;
         default:
