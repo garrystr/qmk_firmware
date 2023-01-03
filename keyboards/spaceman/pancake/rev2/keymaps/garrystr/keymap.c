@@ -4,12 +4,14 @@
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
-#define _DVORAK 0
-#define _QWERTY 1
-#define _COLEMAK 2
-#define _NUMS 3
-#define _FUNCT 4
-#define _ADJUST 16
+enum layers {
+		_DVORAK
+		_QWERTY
+		_COLEMAK
+		_NUMS
+		_FUNCT
+		_ADJUST
+};  
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
